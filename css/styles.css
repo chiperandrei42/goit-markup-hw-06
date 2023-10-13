@@ -189,6 +189,8 @@ stroke: var(--text-hover-color);
         font-weight: 700;
         letter-spacing: 0.96px;
         transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+        height: 50px;
+            width: 200px;
 }
 
 .request-our-service:hover {
@@ -291,11 +293,6 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.request-our-service {
-    height: 50px;
-    width: 200px;
 }
 
 .paragraph-container .list-class {
@@ -641,6 +638,7 @@ background-color: #fff;
     height: 581px;
     border-radius:4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position:absolute;
 }
 
 .close-modal-svg {
@@ -649,16 +647,21 @@ background-color: #fff;
 }
 
 .close-modal-button {
-    position:absolute;
-    margin-left:490px;
-    margin-bottom:543px;
-    margin-top:8px;
+    position:relative;
     width:30px;
     height:30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius:50%;
     background-color:transparent;
     cursor:pointer;
+    left:491px;
+    top:8px;
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+    
+}
+
+.close-modal-button:hover {
+fill:rgba(33, 150, 243, 1);
 }
 
 .is-hidden {
@@ -687,4 +690,162 @@ background-color: #fff;
         font-weight: 700;
         line-height: 16px;
         letter-spacing: 0.03em;
+}
+
+
+
+.form-header-text {
+    margin:0;
+    font-family: var(--heading-font-family);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.label-text {
+    font-family: var(--heading-font-family);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        padding-top:10px;
+        padding-bottom:4px;
+        color:rgba(117, 117, 117, 1);
+}
+
+.input-class {
+    height:36px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius:4px;
+    resize: none;
+    padding-left:42px;
+    width:404px;
+    outline: none;
+}
+
+.textarea-class {
+    resize:none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius:4px;
+    outline: none;
+    height:94px;
+    padding:12px 16px;
+}
+
+.textarea-class::placeholder {
+    font-family: var(--heading-font-family);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        text-align: left;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px 40px 40px;
+    position:relative;
+}
+
+.form-container .field-icons {
+    width:12px;
+    height:12px;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 14px 15px;
+}
+
+.input-container {
+    position:relative;
+}
+
+.input-class:focus {
+    border:1px solid rgba(33, 150, 243, 1);
+    border-radius:4px;
+}
+
+.input-class:focus + svg {
+    fill:rgba(33, 150, 243, 1);
+}
+
+.input-class:focus, .input-class:focus + svg, .textarea-class:focus {
+    transition: border 250ms ease, fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
+
+.textarea-class:focus {
+    border:1px solid rgba(33, 150, 243, 1);
+    border-radius:4px;
+}
+
+.checkbox-container {
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap:8px;
+    padding-left:10px;
+}
+
+.checkbox-text {
+    font-family: var(--heading-font-family);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(117, 117, 117, 1);
+}
+
+.terms-and-conditions {
+    color: rgba(33, 150, 243, 1);
+}
+
+.icon-checkbox-unchecked {
+    width:16px;
+    height:15px;
+    position: absolute;
+}
+
+
+.checkbox-class {
+    margin:0;
+    position: relative;
+    width: 16px;
+        height: 13px;
+        cursor: pointer;
+}
+
+.checkbox-class:not(:checked) {
+-webkit-appearance: none;
+}
+
+.submit-input {
+    width:200px;
+    height:50px;
+    display:flex;
+    background-color: rgba(33, 150, 243, 1);
+    border-radius:4px;
+    border:none;
+    color:rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-family: var(--heading-font-family);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        transition: background-color 250ms ease, box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
+
+.submit-button-div {
+    padding-top:30px;
+    display:flex;
+    justify-content: center;
+}
+
+.submit-input:hover {
+    background-color: rgba(24, 140, 232, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

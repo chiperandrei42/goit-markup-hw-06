@@ -501,16 +501,85 @@
       </section>
     </footer>
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <div class="modal-box">
-          <button class="close-modal-button" data-modal-close>
-            <svg class="close-modal-svg">
-              <use href="./symbol-defs.svg#icon-modal-close"></use>
-            </svg>
-          </button>
-        </div>
+      <div class="modal-box">
+        <button class="close-modal-button" data-modal-close>
+          <svg class="close-modal-svg">
+            <use href="./symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <form name="details-form" autocomplete="off" action="" method="get">
+          <div class="form-container">
+            <p class="form-header-text">
+              Leave your information and we'll call you back
+            </p>
+
+            <label class="label-text" for="name">Name</label>
+            <div class="input-container">
+              <input class="input-class" type="name" name="name" id="name" />
+              <svg class="field-icons">
+                <use
+                  href="./symbol-defs.svg#icon-request-our-service-name"
+                ></use>
+              </svg>
+            </div>
+
+            <label class="label-text" for="tel">Telephone</label>
+            <div class="input-container">
+              <input class="input-class" type="tel" name="tel" id="tel" />
+              <svg class="field-icons">
+                <use
+                  href="./symbol-defs.svg#icon-request-our-service-phone"
+                ></use>
+              </svg>
+            </div>
+
+            <label class="label-text" for="email">E-mail</label>
+            <div class="input-container">
+              <input class="input-class" type="email" name="email" id="tel" />
+              <svg class="field-icons">
+                <use
+                  href="./symbol-defs.svg#icon-request-our-service-email"
+                ></use>
+              </svg>
+            </div>
+
+            <label class="label-text">Comments</label>
+            <textarea
+              class="textarea-class"
+              placeholder="Enter the text"
+            ></textarea>
+
+            <div class="checkbox-container">
+              <svg class="icon-checkbox-unchecked">
+                <use
+                  href="./symbol-defs.svg#icon-terms-and-conditions-unchecked"
+                ></use>
+              </svg>
+
+              <input
+                class="checkbox-class"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                value="checked"
+              />
+              <label for="checkbox">
+                <p class="checkbox-text">
+                  I agree with the letter and accept the
+                  <a href="#" class="terms-and-conditions"
+                    >Terms and Conditions</a
+                  >
+                </p>
+              </label>
+            </div>
+            <div class="submit-button-div">
+              <input class="submit-input" type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
