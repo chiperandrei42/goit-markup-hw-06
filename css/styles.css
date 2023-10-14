@@ -733,6 +733,7 @@ fill:rgba(33, 150, 243, 1);
     outline: none;
     height:94px;
     padding:12px 16px;
+    font-size:14px;
 }
 
 .textarea-class::placeholder {
@@ -773,8 +774,12 @@ fill:rgba(33, 150, 243, 1);
     fill:rgba(33, 150, 243, 1);
 }
 
-.input-class:focus, .input-class:focus + svg, .textarea-class:focus {
+.input-class, .input-class + svg, .textarea-class {
     transition: border 250ms ease, fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
+
+.input-class, .textarea-class {
+    font-family: var(--heading-font-family);
 }
 
 .textarea-class:focus {
@@ -848,4 +853,106 @@ fill:rgba(33, 150, 243, 1);
 .submit-input:hover {
     background-color: rgba(24, 140, 232, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.newsletter-text {
+    font-family: var(--heading-font-family);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color:rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        margin:0;
+        padding-top:15px;
+        padding-bottom: 14px;
+}
+
+.footer-form {
+    display:flex;
+    align-items: center;
+    padding-left:108px;
+    padding-bottom: 10px;
+}
+
+.newsletter-email-form {
+    width:324px;
+    height:46px;
+    background-color:rgba(47, 48, 58, 1);
+    outline:none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius:4px;
+    padding-left: 16px;
+    transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+    font-size:16px;
+}
+
+.newsletter-email-form:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+}
+
+.newsletter-email-form:focus {
+    color:#fff;
+}
+
+.newsletter-email-form::placeholder {
+    font-family: var(--heading-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color:rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-email-submit {
+    width:200px;
+    height:50px;
+    border: none;
+    border-radius:4px;
+    background-color:rgba(33, 150, 243, 1);
+    color:rgba(255, 255, 255, 1);
+    font-family: var(--heading-font-family);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding-right: 25px;
+        cursor: pointer;
+        transition: background-color 250ms ease, box-shadow 250ms ease,
+            cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
+
+.newsletter-email-submit:hover {
+    background-color: rgba(24, 140, 232, 1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-input-container {
+    display:flex;
+    gap:12px;
+}
+
+.footer-form-svg-container svg{
+    width:24px;
+    height:24px;
+    position:absolute;
+    left:148px;
+    top:25%;
+}
+
+.footer-form-svg-container {
+    position:relative;
+}
+
+.logo-footer {
+    text-decoration: none;
+    color: var(--text-hover-color);
+    font-family: var(--logo-font-family);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 162.5%;
+    margin-bottom: 0;
 }

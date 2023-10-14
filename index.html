@@ -432,7 +432,7 @@
             <div class="footer-child-container">
               <div class="logo-container-class">
                 <a class="link-class" href="index.html">
-                  <h2 class="logo">
+                  <h2 class="logo-footer">
                     Web<span class="logo-footer-color">Studio</span>
                   </h2>
                 </a>
@@ -496,6 +496,36 @@
                 </li>
               </ul>
             </div>
+            <div class="footer-form">
+              <form
+                name="footer-email-form"
+                autocomplete="off"
+                action=""
+                method="get"
+              >
+                <h3 class="newsletter-text">Subscribe to the newsletter</h3>
+                <div class="footer-input-container">
+                  <input
+                    placeholder="E-mail"
+                    class="newsletter-email-form"
+                    type="email"
+                    name="newsletter-email"
+                    id="newsletter-email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  />
+                  <div class="footer-form-svg-container">
+                    <input
+                      class="newsletter-email-submit"
+                      type="submit"
+                      value="Subscribe"
+                    />
+                    <svg class="footer-send-icon">
+                      <use href="/symbol-defs.svg#footer-send-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -515,7 +545,13 @@
 
             <label class="label-text" for="name">Name</label>
             <div class="input-container">
-              <input class="input-class" type="name" name="name" id="name" />
+              <input
+                class="input-class"
+                type="name"
+                name="name"
+                id="name"
+                pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+              />
               <svg class="field-icons">
                 <use
                   href="./symbol-defs.svg#icon-request-our-service-name"
@@ -525,7 +561,13 @@
 
             <label class="label-text" for="tel">Telephone</label>
             <div class="input-container">
-              <input class="input-class" type="tel" name="tel" id="tel" />
+              <input
+                class="input-class"
+                type="tel"
+                name="tel"
+                id="tel"
+                pattern="/(?!:\A|\s)(?!(\d{1,6}\s+\D)|((\d{1,2}\s+){2,2}))(((\+\d{1,3})|(\(\+\d{1,3}\)))\s*)?((\d{1,6})|(\(\d{1,6}\)))\/?(([ -.]?)\d{1,5}){1,5}((\s*(#|x|(ext))\.?\s*)\d{1,5})?(?!:(\Z|\w|\b\s))/gm"
+              />
               <svg class="field-icons">
                 <use
                   href="./symbol-defs.svg#icon-request-our-service-phone"
@@ -535,7 +577,13 @@
 
             <label class="label-text" for="email">E-mail</label>
             <div class="input-container">
-              <input class="input-class" type="email" name="email" id="tel" />
+              <input
+                class="input-class"
+                type="email"
+                name="email"
+                id="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              />
               <svg class="field-icons">
                 <use
                   href="./symbol-defs.svg#icon-request-our-service-email"
