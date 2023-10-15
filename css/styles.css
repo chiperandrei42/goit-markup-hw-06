@@ -819,12 +819,14 @@ fill:rgba(33, 150, 243, 1);
     margin:0;
     position: relative;
     width: 16px;
-        height: 13px;
+        height: 16px;
         cursor: pointer;
+        accent-color:rgba(33, 150, 243, 1);
 }
 
+
 .checkbox-class:not(:checked) {
--webkit-appearance: none;
+appearance:none;
 }
 
 .submit-input {
