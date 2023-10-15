@@ -844,6 +844,8 @@ appearance:none;
         line-height: 30px;
         letter-spacing: 0.06em;
         transition: background-color 250ms ease, box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+        display: flex;
+            justify-content: center;
 }
 
 .submit-button-div {
