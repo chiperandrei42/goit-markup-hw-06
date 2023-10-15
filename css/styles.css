@@ -219,6 +219,7 @@ stroke: var(--text-hover-color);
     line-height: normal;
     text-transform: uppercase;
     letter-spacing: 0.42px;
+    padding-top: 16px;
 }
 
 .paragraph-secondary {
